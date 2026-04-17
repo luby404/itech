@@ -1,0 +1,115 @@
+@import url("home.css");
+@import url("sobre.css");
+@import url("services.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #FFF;
+    --secundaria: #111;
+
+    --text: #FFF;
+    --text2: #000;
+    --gelo: #d2d2d2;
+
+}
+
+.max_width {
+
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primaria);
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+header .logo {
+    width: 70px;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+.menu_content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu_content .iten_menu     {
+    text-decoration: none;
+    color: var(--text2);
+    opacity: .8;
+    font-size: .8rem;
+
+}
+
+.button {
+    background-color: var(--secundaria);
+    color: var(--text);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+
+    font-size: .9rem;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 700px) {
+    .iten_menu {
+        display: none;
+    }
+
+    header {
+        padding: 0px 10px;
+    }
+}

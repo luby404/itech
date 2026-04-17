@@ -1,0 +1,10 @@
+.sobre_section {
+    padding: 1rem;
+}
+
+.sobre_section .sobre_content {
+    background-color: var(--secundaria);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 10px;
+}

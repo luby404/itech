@@ -1,0 +1,36 @@
+.home_sections {
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+    height: 70%;
+    min-height: 400px;
+
+
+}
+
+.infos_hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    text-align: center;
+
+    width: 70%;
+}
+
+@media (max-width: 700px) {
+    .infos_hero {
+        width: 90%;
+   }
+   .infos_hero h1{
+        font-size: 1.8rem;
+   }
+   .infos_hero p, .infos_hero span{
+        font-size: .7rem;
+   }
+}
