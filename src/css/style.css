@@ -13,7 +13,7 @@
 
 :root {
     --primaria: #FFF;
-    --secundaria: #111;
+    --secundaria: #041b2e;
 
     --text: #FFF;
     --text2: #000;
@@ -47,6 +47,9 @@ header {
     top: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+
+    padding: 0 1.5rem;
+    z-index: 999;
 
 }
 
@@ -85,6 +88,12 @@ header .logo img {
     
 }
 
+.button.button2 {
+    background-color: #d2d2d2;
+    color: var(--text2);
+
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -102,6 +111,14 @@ header .logo img {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem 1rem;
 }
 
 @media (max-width: 700px) {
